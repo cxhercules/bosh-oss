@@ -5,7 +5,6 @@ bosh create-env bosh-deployment/bosh.yml \
     --vars-store=bosh-ctrl-plane/creds.yml \
     -o bosh-deployment/gcp/cpi.yml \
     -o bosh-deployment/jumpbox-user.yml \
-    -o bosh-deployment/bbr.yml \
     -o bosh-deployment/misc/ntp.yml \
     -o bosh-deployment/uaa.yml \
     -o bosh-deployment/credhub.yml \
@@ -17,7 +16,7 @@ bosh create-env bosh-deployment/bosh.yml \
     --var-file gcp_credentials_json=bosh-ctrl-plane/gcp-bosh-serviceaccount.json \
     -v project_id=cso-pcfs-apj-amlan \
     -v zone=asia-south1-a \
-    -v tags=[boss-oss,am-pcf-ops-manager-external] \
+    -v tags=[boss-oss,am-pcf-ops-manager-external,internal] \
     -v network=am-pcf-pcf-network \
     -v subnetwork=am-pcf-management-subnet \
     -v internal_ntp=[metadata.google.internal] \
