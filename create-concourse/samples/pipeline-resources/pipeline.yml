@@ -1,0 +1,15 @@
+---
+resources:
+- name: resource-basic
+  type: git
+  source:
+    uri: https://github.com/starkandwayne/concourse-tutorial.git
+    branch: develop
+
+jobs:
+- name: job-hello-world
+  public: true
+  plan:
+  - get: resource-basic
+  - task: hello-world
+    file: resource-basic/tutorials/basic/task-hello-world/task_hello_world.yml
