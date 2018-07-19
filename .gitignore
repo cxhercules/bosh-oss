@@ -1,4 +1,11 @@
 bosh-deployment
-states.json
+concourse-bosh-deployment
+state.json
 creds.yml
+cluster-creds.yml
+state.json
+creds.yml
+gcp-bosh-serviceaccount.json
 installer
+*.pem
+vendor
