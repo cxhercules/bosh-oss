@@ -1,0 +1,9 @@
+- op: add
+  path: /resources/-
+  value:
+    name: amlan-pcf-pipelines
+    type: git
+    source:
+      uri: git@github.com:amlan-pivotal/bosh-oss.git
+      branch: master
+      private_key: {{git_private_key}}
