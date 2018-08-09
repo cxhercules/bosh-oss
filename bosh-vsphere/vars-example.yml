@@ -1,0 +1,17 @@
+director_name: bosh-oss-vsphere
+internal_cidr: 192.168.0.0/24
+internal_gw: 192.168.0.1
+internal_ip: 192.168.0.6
+network_name: "VM Network"
+vcenter_dc: dc
+vcenter_ds: datastore
+vcenter_ip: 192.168.0.254
+vcenter_user: root
+vcenter_password: password
+vcenter_templates: oss-templates
+vcenter_vms: oss-vms
+vcenter_disks: oss-disks
+vcenter_cluster: cluster
+vcenter_rp: oss
+internal_ntp: [0.pool.ntp.org,1.pool.ntp.org,2.pool.ntp.org,3.pool.ntp.org]
+internal_dns: [192.168.0.1,8.8.8.8,8.8.4.4]
