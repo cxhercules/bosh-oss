@@ -9,3 +9,4 @@ installer
 vendor
 vars.yml
 state.json
+cloud-config.yml

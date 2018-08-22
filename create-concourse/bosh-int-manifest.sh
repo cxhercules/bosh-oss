@@ -15,7 +15,7 @@ fi
 
 
 #Deploy concourse to BOSH OSS
-bosh -n deploy -d concourse concourse-bosh-deployment/cluster/concourse.yml \
+bosh -n int -d concourse concourse-bosh-deployment/cluster/concourse.yml \
   -o concourse-bosh-deployment/cluster/operations/static-web.yml \
   -o concourse-bosh-deployment/cluster/operations/tls-vars.yml \
   -o concourse-bosh-deployment/cluster/operations/tls.yml \

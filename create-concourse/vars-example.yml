@@ -1,0 +1,13 @@
+atc_basic_auth.username: admin
+azs: [AZ1,AZ2]
+concourse_domain_name: 10.10.10.5
+db_persistent_disk_type: "30720"
+db_vm_type: large
+deployment_name: concourse
+external_url: https://10.10.10.5
+network_name: MANAGEMENT
+web_instances: 1
+web_ip: 10.10.10.5
+web_vm_type: medium
+worker_instances: 3
+worker_vm_type: large.disk
