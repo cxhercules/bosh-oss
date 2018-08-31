@@ -1,0 +1,33 @@
+## azs
+- type: replace
+  path: /instance_groups/name=apply-addons/azs
+  value: ((single_az))
+
+- type: replace
+  path: /instance_groups/name=master/azs
+  value: ((azs))
+
+- type: replace
+  path: /instance_groups/name=worker/azs
+  value: ((azs))
+
+## network name
+- type: replace
+  path: /instance_groups/name=apply-addons/networks
+  value:
+     - name: ((network))
+
+- type: replace
+  path: /instance_groups/name=master/networks
+  value:
+     - name: ((network))
+       default:
+       - dns
+       - gateway
+       static_ips:
+       - ((kubernetes_master_host))
+
+- type: replace
+  path: /instance_groups/name=worker/networks
+  value:
+     - name: ((network))

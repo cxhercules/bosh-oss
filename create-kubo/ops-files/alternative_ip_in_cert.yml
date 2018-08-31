@@ -1,0 +1,4 @@
+## azs
+- type: replace
+  path: /variables/name=tls-kubernetes/options/alternative_names/-
+  value: ((kubernetes_master_host))
