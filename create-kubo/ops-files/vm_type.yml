@@ -1,0 +1,12 @@
+## vm_type
+- type: replace
+  path: /instance_groups/name=apply-addons/vm_type
+  value: ((addons_vms))
+
+- type: replace
+  path: /instance_groups/name=master/vm_type
+  value: ((master_vms))
+
+- type: replace
+  path: /instance_groups/name=worker/vm_type
+  value: ((worker_vms))

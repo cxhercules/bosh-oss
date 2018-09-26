@@ -1,12 +1,18 @@
+# Repositories 
 bosh-deployment
+kubo-deployment
 concourse-bosh-deployment
+
+## Private files
 creds.yml
 cluster-creds.yml
 creds.yml
 gcp-bosh-serviceaccount.json
-installer
 *.pem
-vendor
 vars.yml
-state.json
 cloud-config.yml
+state.json
+
+## Misc
+installer
+vendor

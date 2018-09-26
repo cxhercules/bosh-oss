@@ -1,0 +1,7 @@
+kubernetes_master_host: 10.0.0.7
+single_az: [AZ1]
+azs: [AZ1,AZ2]
+network: MANAGEMENT
+addons_vms: micro
+master_vms: small
+worker_vms: large.mem
